@@ -1,0 +1,284 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\Setup.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Setup.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROGRAM_FOLDER_DLG DIALOG DISCARDABLE  0, 0, 301, 166
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Decker Setup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         129,IDC_STATIC,"Static",SS_BITMAP,7,7,105,46
+    LTEXT           "Enter the program folder you wish to contain the Decker icon.",
+                    IDC_STATIC,132,6,151,27
+    EDITTEXT        IDC_PROGAM_FOLDER_FLD,132,38,162,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_FOLDER_BROWSE_BTN,244,61,50,14
+END
+
+IDD_BROWSE_DLG DIALOGEX 0, 0, 235, 197
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Destination Directory"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,59,176,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,125,176,50,14
+    LTEXT           "Choose the directory path for installation:",IDC_STATIC,
+                    7,7,128,8
+    CONTROL         "Tree1",IDC_DIRECTORY_TREE,"SysTreeView32",
+                    TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | 
+                    WS_BORDER | WS_TABSTOP,7,40,221,131,WS_EX_CLIENTEDGE
+    LTEXT           "Directories",IDC_STATIC,7,32,34,8
+    EDITTEXT        IDC_PATH,7,15,221,14,ES_AUTOHSCROLL
+END
+
+IDD_DESTINATION_DLG DIALOG DISCARDABLE  0, 0, 301, 166
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Decker Setup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         129,IDC_STATIC,"Static",SS_BITMAP,7,7,105,46
+    PUSHBUTTON      "Browse",IDC_BROWSE_BUTTON,245,145,50,14
+    LTEXT           "Please enter the installation directory.",IDC_STATIC,
+                    133,7,152,8
+    LTEXT           "C:\\DummyDirectory",IDC_DESTINATION,117,128,169,8
+    GROUPBOX        "Path",IDC_STATIC,109,119,184,23
+END
+
+IDD_MAIN_DLG DIALOG DISCARDABLE  0, 0, 301, 166
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Decker Setup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         129,IDC_STATIC,"Static",SS_BITMAP,7,7,105,46
+    LTEXT           "Welcome to the Decker Installation Utility.",
+                    IDC_WELCOME_TEXT,132,28,162,8
+END
+
+IDD_CONFIRM_DLG DIALOG DISCARDABLE  0, 0, 301, 166
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Decker Setup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         129,IDC_STATIC,"Static",SS_BITMAP,7,7,105,46
+    LTEXT           "You have entered the following information:",IDC_STATIC,
+                    120,16,137,8
+    LTEXT           "If the above information is correct, click Next to begin installation.",
+                    IDC_STATIC,120,113,141,20
+    EDITTEXT        IDC_SETUP_INFO,120,27,147,80,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+END
+
+IDD_FINAL_DLG DIALOG DISCARDABLE  0, 0, 301, 166
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Decker Setup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Setup is complete.",IDC_FINAL_TEXT,129,24,152,37
+    CONTROL         129,IDC_STATIC,"Static",SS_BITMAP,7,7,105,46
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Setup MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Setup\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Setup.EXE\0"
+            VALUE "ProductName", "Setup Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PROGRAM_FOLDER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 294
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_BROWSE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+
+    IDD_DESTINATION_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 294
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_MAIN_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 294
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_CONFIRM_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 294
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_FINAL_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 294
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_DRIVEIMAGES         BITMAP  DISCARDABLE     "res\\Drives.bmp"
+IDB_SETUP               BITMAP  DISCARDABLE     "res\\setup.bmp"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\Setup.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

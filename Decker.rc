@@ -1,0 +1,943 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Decker.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Decker.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_INTRO DIALOGEX 0, 0, 119, 191
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Decker"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "New",IDC_INTRO_NEW,35,70,50,14
+    CONTROL         129,IDC_STATIC,"Static",SS_BITMAP,7,7,105,46
+    PUSHBUTTON      "Load",IDC_INTRO_LOAD,35,90,50,14
+    PUSHBUTTON      "Exit",IDCANCEL,35,110,50,14
+    RTEXT           "Version x.x",IDC_VERSION,7,57,105,8
+    CTEXT           "Press F1 at any time for help.",IDC_STATIC,7,176,105,8
+    LTEXT           "Decker comes with ABSOLUTELY NO WARRANTY. This is free software, and you are welcome to redistribute it. See GPL.txt for details.",
+                    IDC_STATIC,7,132,105,42
+END
+
+IDD_NEW_CHAR DIALOG DISCARDABLE  0, 0, 196, 180
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Character"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Character Name:",IDC_STATIC,14,15,54,8
+    EDITTEXT        IDC_NEW_CHAR_NAME,14,23,160,14,ES_AUTOHSCROLL
+    LTEXT           "Character Image:",IDC_STATIC,14,43,55,8
+    CONTROL         "Image",IDC_NEW_CHAR_IMAGE,"Button",BS_OWNERDRAW | 
+                    WS_DISABLED | WS_TABSTOP,14,52,16,16
+    CONTROL         "Spin1",IDC_NEW_CHAR_IMAGE_SPIN,"msctls_updown32",
+                    UDS_WRAP | UDS_ALIGNRIGHT | UDS_ARROWKEYS | UDS_HORZ,14,
+                    68,16,11
+    LTEXT           "Starting Bonus:",IDC_STATIC,99,43,49,8
+    CONTROL         "None (Tough Guy)",IDC_NEW_CHAR_BONUS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,98,54,75,10
+    CONTROL         "Skills",IDC_NEW_CHAR_BONUS1,"Button",BS_AUTORADIOBUTTON,
+                    98,64,32,10
+    CONTROL         "Hardware",IDC_NEW_CHAR_BONUS2,"Button",
+                    BS_AUTORADIOBUTTON,98,74,47,10
+    CONTROL         "Software",IDC_NEW_CHAR_BONUS3,"Button",
+                    BS_AUTORADIOBUTTON,98,84,44,10
+    CONTROL         "Money",IDC_NEW_CHAR_BONUS4,"Button",BS_AUTORADIOBUTTON,
+                    98,94,37,10
+    CONTROL         "Ironman Mode",IDC_NEW_CHAR_IRONMAN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,122,61,10
+    DEFPUSHBUTTON   "OK",IDOK,42,159,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,104,159,50,14
+    GROUPBOX        "Game Options",IDC_STATIC,7,110,182,42
+    CONTROL         "Tooltips",IDC_NEW_CHAR_TOOLTIPS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,136,41,10
+    GROUPBOX        "Character Information",IDC_STATIC,7,7,182,102
+END
+
+IDD_OPTIONS DIALOG DISCARDABLE  0, 0, 122, 119
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Continue",IDCANCEL,36,98,50,14
+    PUSHBUTTON      "Quick Load",IDC_OPTIONS_QUICK_LOAD,7,7,50,14
+    PUSHBUTTON      "Load Game",IDC_OPTIONS_LOAD,65,7,50,14
+    PUSHBUTTON      "Quick Save",IDC_OPTIONS_SAVE,7,25,50,14
+    PUSHBUTTON      "Save As...",IDC_OPTIONS_SAVEAS,65,25,50,14
+    PUSHBUTTON      "New Game",IDC_OPTIONS_NEW,7,45,50,14
+    PUSHBUTTON      "Quit",IDC_OPTIONS_QUIT,65,45,50,14
+    CONTROL         "Tooltips",IDC_OPTIONS_TOOLTIPS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,40,67,41,10
+    CONTROL         "Sound Effects",IDC_OPTIONS_SOUND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,40,80,61,10
+END
+
+IDD_CHAR_DATA DIALOG DISCARDABLE  0, 0, 294, 181
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Character Information"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "View Deck",IDC_CHAR_VIEW_DECK,91,160,50,14
+    DEFPUSHBUTTON   "Close",IDCANCEL,151,160,50,14
+    LTEXT           "Name:",IDC_STATIC,7,7,22,8
+    LTEXT           "?",IDC_CHAR_NAME,62,7,96,8
+    LTEXT           "Reputation:",IDC_STATIC,7,18,38,8
+    LTEXT           "?",IDC_CHAR_REPUTATION,62,18,96,8
+    LTEXT           "Money:",IDC_STATIC,7,29,24,8
+    LTEXT           "?",IDC_CHAR_CREDITS,62,29,96,8
+    LTEXT           "Current Lifestyle:",IDC_STATIC,139,63,53,8
+    LTEXT           "?",IDC_CHAR_LIFESTYLE,204,63,75,8
+    LTEXT           "Attack:",IDC_STATIC,13,63,24,8
+    LTEXT           "Defense:",IDC_STATIC,13,75,30,8
+    LTEXT           "Stealth:",IDC_STATIC,13,87,25,8
+    LTEXT           "Analysis:",IDC_STATIC,13,99,28,8
+    LTEXT           "Programming:",IDC_STATIC,13,111,44,8
+    LTEXT           "Chip Design:",IDC_STATIC,13,123,41,8
+    GROUPBOX        "Skills",IDC_STATIC,7,53,119,99
+    LTEXT           "?",IDC_CHAR_ATTACK,79,63,18,8
+    LTEXT           "?",IDC_CHAR_DEFENSE,79,75,18,8
+    LTEXT           "?",IDC_CHAR_STEALTH,79,87,18,8
+    LTEXT           "?",IDC_CHAR_ANALYSIS,79,99,18,8
+    LTEXT           "?",IDC_CHAR_PROGRAMMING,79,111,18,8
+    LTEXT           "?",IDC_CHAR_CHIP_DESIGN,79,123,18,8
+    LTEXT           "Physical Health:",IDC_STATIC,7,40,52,8
+    LTEXT           "?",IDC_CHAR_PHYS_HEALTH,62,40,96,8
+    LTEXT           "Unused Skill Points:",IDC_STATIC,13,140,64,8
+    LTEXT           "?",IDC_CHAR_SKILL_POINTS,79,140,8,8
+    PUSHBUTTON      "+",IDC_CHAR_INCR_ATTACK,97,63,11,9
+    PUSHBUTTON      "+",IDC_CHAR_INCR_DEFENSE,97,75,11,9
+    PUSHBUTTON      "+",IDC_CHAR_INCR_STEALTH,97,87,11,9
+    PUSHBUTTON      "+",IDC_CHAR_INCR_ANALYSIS,97,99,11,9
+    PUSHBUTTON      "+",IDC_CHAR_INCR_PROG,97,111,11,9
+    PUSHBUTTON      "+",IDC_CHAR_INCR_CHIP_DES,97,123,11,9
+    GROUPBOX        "Lifestyle",IDC_STATIC,132,53,155,99
+    LTEXT           "Monthly Cost:",IDC_STATIC,139,75,44,8
+    LTEXT           "?",IDC_CHAR_LIFESTYLE_COST,204,75,75,8
+    PUSHBUTTON      "Upgrade",IDC_CHAR_LIFESTYLE_UPGRADE,248,96,33,12
+    LTEXT           "Cost to Upgrade:",IDC_STATIC,139,99,54,8
+    LTEXT           "?",IDC_CHAR_LIFESTYLE_UPGRADE_COST,204,99,40,8
+    LTEXT           "?",IDC_CHAR_DATE,209,7,78,8
+    LTEXT           "Due in:",IDC_STATIC,139,87,24,8
+    LTEXT           "?",IDC_CHAR_RENT_DUE_TIME,203,87,75,8
+    LTEXT           "(IronMan)",IDC_CHAR_IRONMAN,209,18,34,8
+END
+
+IDD_DECK_DATA DIALOGEX 0, 0, 379, 279
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cyberdeck Configuration"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Hardware",IDC_STATIC,7,7,365,109
+    LTEXT           "CPU Rating:",IDC_STATIC,15,17,40,8
+    LTEXT           "?",IDC_DECK_CPU,79,17,68,8
+    LTEXT           "Coprocessor:",IDC_STATIC,15,28,42,8
+    LTEXT           "?",IDC_DECK_COP,79,28,68,8
+    LTEXT           "Attack Firmware:",IDC_STATIC,15,39,54,8
+    LTEXT           "?",IDC_DECK_ATTACK,79,39,68,8
+    LTEXT           "Defense Firmware:",IDC_STATIC,15,50,60,8
+    LTEXT           "?",IDC_DECK_DEFENSE,79,50,68,8
+    LTEXT           "Stealth Firmware:",IDC_STATIC,15,61,55,8
+    LTEXT           "?",IDC_DECK_STEALTH,79,61,68,8
+    LTEXT           "Analysis Firmware:",IDC_STATIC,15,72,58,8
+    LTEXT           "?",IDC_DECK_ANALYSIS,79,72,68,8
+    LTEXT           "Optional Hardware:",IDC_STATIC,173,16,62,8
+    LTEXT           "None",IDC_DECK_OTHER_HW,188,25,177,85
+    GROUPBOX        "Software",IDC_STATIC,7,117,365,135
+    CONTROL         "List1",IDC_DECK_SOFTWARE,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,15,128,279,91,WS_EX_CLIENTEDGE
+    LTEXT           "Current Load:",IDC_STATIC,15,222,44,8
+    LTEXT           "?",IDC_DECK_CURRENT_LOAD,79,222,60,8
+    LTEXT           "Light  Load:",IDC_STATIC,145,222,38,8
+    LTEXT           "?",IDC_DECK_LOAD_LIGHT,199,222,84,8
+    LTEXT           "Average  Load:",IDC_STATIC,145,231,50,8
+    LTEXT           "Heavy  Load:",IDC_STATIC,145,240,44,8
+    LTEXT           "?",IDC_DECK_LOAD_HEAVY,199,240,84,8
+    CONTROL         "Up",IDC_DECK_UP,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,298,152,10,10
+    CONTROL         "Down",IDC_DECK_DOWN,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,298,167,10,10
+    PUSHBUTTON      "Load",IDC_DECK_LOAD,313,130,50,14
+    PUSHBUTTON      "Default",IDC_DECK_DEFAULT,313,148,50,14
+    PUSHBUTTON      "Clear All",IDC_DECK_CLEAR,313,166,50,14
+    PUSHBUTTON      "Trash",IDC_DECK_TRASH,313,184,50,14
+    PUSHBUTTON      "Rename",IDC_DECK_RENAME,313,202,50,14
+    PUSHBUTTON      "Sound Effect",IDC_DECK_SOUND,313,220,50,14
+    DEFPUSHBUTTON   "View Char.",IDC_DECK_VIEW_CHAR,137,258,50,14
+    PUSHBUTTON      "Close",IDCANCEL,192,258,50,14
+    LTEXT           "?",IDC_DECK_LOAD_AVERAGE,199,231,84,8
+END
+
+IDD_CONTRACT_LIST DIALOGEX 0, 0, 324, 143
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Available Contracts"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "View",IDC_VC_VIEW,105,122,50,14
+    PUSHBUTTON      "Close",IDCANCEL,167,122,50,14
+    CONTROL         "List1",IDC_VC_CONTRACT_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,7,310,109,WS_EX_CLIENTEDGE
+END
+
+IDD_CONTRACT_DATA DIALOG DISCARDABLE  0, 0, 272, 258
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Contract Information"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Accept",IDOK,76,237,50,14
+    PUSHBUTTON      "Close",IDCANCEL,144,237,50,14
+    LTEXT           "Description:",IDC_STATIC,7,62,38,8
+    LTEXT           "?",IDC_CONT_DESC,16,71,249,47,SS_NOPREFIX
+    LTEXT           "Type:",IDC_STATIC,7,7,19,8
+    LTEXT           "Target:",IDC_STATIC,7,18,24,8
+    LTEXT           "Difficulty:",IDC_STATIC,7,29,30,8
+    LTEXT           "Pay:",IDC_STATIC,7,40,15,8
+    LTEXT           "?",IDC_CONT_TYPE,43,7,134,8,SS_NOPREFIX
+    LTEXT           "?",IDC_CONT_TARGET_CORP,43,18,134,8,SS_NOPREFIX
+    LTEXT           "?",IDC_CONT_DIFFICULTY,43,29,134,8
+    LTEXT           "?",IDC_CONT_PAY,43,40,134,8
+    LTEXT           "Deadline:",IDC_STATIC,7,51,31,8
+    LTEXT           "?",IDC_CONT_DEADLINE,43,51,134,8
+    LTEXT           "Status:",IDC_CONT_STATUS1,7,123,155,8
+    LTEXT           "?",IDC_CONT_STATUS2,16,133,249,94,SS_NOPREFIX
+END
+
+IDD_SHOP DIALOGEX 0, 0, 248, 197
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shopping"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Close",IDCANCEL,159,176,50,14
+    LTEXT           "Items for Sale:",IDC_STATIC,7,7,46,8
+    CONTROL         "List1",IDC_SHOP_ITEM_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,16,234,138,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Purchase",IDC_SHOP_PURCHASE,37,176,50,14
+    PUSHBUTTON      "Special Order",IDC_SHOP_ORDER,98,176,50,14
+    LTEXT           "Credits:",IDC_STATIC,7,159,24,8
+    LTEXT           "?",IDC_SHOP_CREDITS,37,159,81,8
+END
+
+IDD_TRANSFER DIALOGEX 0, 0, 366, 215
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Item to Transfer"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,194,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,185,194,50,14
+    CONTROL         "List1",IDC_TRANSFER_ITEM_LIST,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,7,352,170,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "Current Load:",IDC_TRANSFER_LOAD_TEXT,7,179,44,8
+    LTEXT           "?",IDC_TRANSFER_LOAD,57,179,39,8
+    LTEXT           "After Transfer:",IDC_TRANSFER_AFTER_TEXT,7,190,46,8
+    LTEXT           "?",IDC_TRANSFER_AFTER,57,190,39,8
+    LTEXT           "Light:",IDC_TRANSFER_LIGHT_TEXT,269,179,18,8
+    LTEXT           "Average:",IDC_TRANSFER_AVERAGE_TEXT,269,189,30,8
+    LTEXT           "Heavy:",IDC_TRANSFER_HEAVY_TEXT,269,199,24,8
+    LTEXT           "?",IDC_TRANSFER_LIGHT,299,179,60,8
+    LTEXT           "?",IDC_TRANSFER_AVERAGE,299,189,60,8
+    LTEXT           "?",IDC_TRANSFER_HEAVY,299,199,60,8
+END
+
+IDD_ICE_DATA DIALOG DISCARDABLE  0, 0, 218, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ICE Data"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,83,154,50,14
+    LTEXT           "Name:",IDC_STATIC,7,28,22,8
+    LTEXT           "Type:",IDC_STATIC,7,42,19,8
+    LTEXT           "Rating:",IDC_STATIC,7,57,24,8
+    LTEXT           "Status:",IDC_STATIC,7,71,23,8
+    LTEXT           "?",IDC_ICE_NAME,37,28,174,8,SS_NOPREFIX
+    LTEXT           "?",IDC_ICE_TYPE,37,42,174,8,SS_NOPREFIX
+    LTEXT           "?",IDC_ICE_RATING,37,57,174,8,SS_NOPREFIX
+    LTEXT           "?",IDC_ICE_STATUS,37,71,174,8,SS_NOPREFIX
+    LTEXT           "Notes:",IDC_STATIC,7,84,22,8
+    LTEXT           "?",IDC_ICE_NOTES,37,84,174,34,SS_NOPREFIX
+    CONTROL         "Pic",IDC_ICE_PIC,"Button",BS_OWNERDRAW | WS_DISABLED,7,
+                    7,16,16
+END
+
+IDD_MISSION_RESULTS DIALOG DISCARDABLE  0, 0, 301, 188
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Mission Results"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,125,167,50,14
+    LTEXT           "Contract:",IDC_STATIC,7,7,30,8
+    LTEXT           "Task Summary:",IDC_STATIC,7,35,50,8
+    LTEXT           "Result:",IDC_STATIC,7,21,23,8
+    LTEXT           "?",IDC_MR_CONTRACT,51,7,243,8,SS_NOPREFIX
+    LTEXT           "?",IDC_MR_RESULT,51,21,243,8
+    LTEXT           "?",IDC_MR_SUMMARY,23,44,265,71
+    LTEXT           "Mission Pay:",IDC_STATIC,7,121,40,8
+    LTEXT           "File Values:",IDC_STATIC,7,133,37,8
+    LTEXT           "Total Earned:",IDC_STATIC,7,146,44,8
+    LTEXT           "?",IDC_MR_PAY,67,121,46,8
+    LTEXT           "?",IDC_MR_FILES,67,133,47,8
+    LTEXT           "?",IDC_MR_TOTAL,67,146,47,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT | SS_SUNKEN,7,143,78,
+                    1
+    LTEXT           "Reputation:",IDC_STATIC,136,121,38,8
+    LTEXT           "?",IDC_MR_REP,177,121,117,8
+    LTEXT           "Skill Points Gained:",IDC_STATIC,136,133,62,8
+    LTEXT           "?",IDC_MR_SKILL_PTS,203,133,53,8
+END
+
+IDD_REST DIALOG DISCARDABLE  0, 0, 203, 207
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rest & Recuperate"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,76,186,50,14
+    LTEXT           "Date:",IDC_STATIC,7,7,18,8
+    LTEXT           "Health:",IDC_STATIC,7,18,24,8
+    PUSHBUTTON      "Go",IDC_HEAL,67,62,17,14
+    PUSHBUTTON      "Go",IDC_HEAL_ALL,67,98,17,14
+    LTEXT           "?",IDC_REST_TIME_HOME,35,62,22,8
+    LTEXT           "?",IDC_REST_TIME_HOME_ALL,35,99,22,8
+    LTEXT           "?",IDC_REST_TIME_HOSP,130,62,22,8
+    LTEXT           "?",IDC_REST_TIME_HOSP_ALL,130,99,22,8
+    LTEXT           "?",IDC_REST_COST_HOSP,130,72,22,8
+    LTEXT           "?",IDC_REST_COST_HOSP_ALL,130,110,22,8
+    PUSHBUTTON      "Go",IDC_HOSP_HEAL,159,62,17,14
+    PUSHBUTTON      "Go",IDC_HOSP_HEAL_ALL,159,98,17,14
+    GROUPBOX        "Home",IDC_STATIC,7,41,93,85
+    GROUPBOX        "Hospital",IDC_STATIC,104,41,92,85
+    LTEXT           "?",IDC_REST_DATE,39,7,74,8
+    LTEXT           "?",IDC_REST_HEALTH,39,18,38,8
+    LTEXT           "Money:",IDC_STATIC,7,28,24,8
+    LTEXT           "?",IDC_REST_MONEY,39,28,38,8
+    LTEXT           "Heal 5%",IDC_STATIC,14,52,28,9,SS_SUNKEN
+    LTEXT           "Days:",IDC_STATIC,14,62,19,8
+    LTEXT           "Heal 100%",IDC_STATIC,14,88,35,9,SS_SUNKEN
+    LTEXT           "Days:",IDC_STATIC,14,99,19,8
+    LTEXT           "Heal 5%",IDC_STATIC,109,52,28,9,SS_SUNKEN
+    LTEXT           "Days:",IDC_STATIC,109,62,19,8
+    LTEXT           "Heal 100%",IDC_STATIC,109,88,35,9,SS_SUNKEN
+    LTEXT           "Days:",IDC_STATIC,109,99,19,8
+    LTEXT           "Cost:",IDC_STATIC,109,72,17,8
+    LTEXT           "Cost:",IDC_STATIC,109,110,17,8
+    PUSHBUTTON      "Wait 1 Day",IDC_REST_WAIT,14,138,50,14
+    GROUPBOX        "Rest Without Healing",IDC_STATIC,7,127,189,55
+END
+
+IDD_NEW_PROJECT_DLG DIALOG DISCARDABLE  0, 0, 155, 143
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Project"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,80,122,50,14
+    COMBOBOX        IDC_PROJ_TYPE,68,7,80,50,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_PROJ_CLASS,68,42,80,114,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PROJ_RATING,68,79,80,114,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Start",IDOK,24,122,50,14
+    LTEXT           "Project Type:",IDC_STATIC,7,9,43,8
+    LTEXT           "Class:",IDC_STATIC,7,45,20,8
+    LTEXT           "Source Available:",IDC_STATIC,7,63,56,8
+    LTEXT           "?",IDC_PROJ_SOURCE,68,63,80,8
+    LTEXT           "Rating:",IDC_STATIC,7,81,24,8
+    LTEXT           "Estimated Time:",IDC_STATIC,7,99,51,8
+    LTEXT           "?",IDC_PROJ_TIME,68,99,80,8
+    LTEXT           "Skill:",IDC_STATIC,7,27,16,8
+    LTEXT           "?",IDC_PROJ_SKILL,68,27,80,8
+END
+
+IDD_PROJECT DIALOGEX 0, 0, 286, 262
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Project Management"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Close",IDCANCEL,118,241,50,14
+    PUSHBUTTON      "Work Day",IDC_PROJ_WORK_DAY,167,30,50,14
+    PUSHBUTTON      "Finish",IDC_PROJ_FINISH,223,30,50,14
+    PUSHBUTTON      "Work Week",IDC_PROJ_WORK_WEEK,167,48,50,14
+    PUSHBUTTON      "New",IDC_PROJ_NEW,223,48,50,14
+    CONTROL         "List1",IDC_PROJ_SOURCE,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,13,122,205,109,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Build",IDC_PROJ_BUILD,223,135,50,14
+    PUSHBUTTON      "Trash",IDC_PROJ_TRASH,223,154,50,14
+    LTEXT           "Type:",IDC_STATIC,14,31,19,8
+    GROUPBOX        "Current Project",IDC_STATIC,7,19,272,49
+    LTEXT           "Days Left:",IDC_STATIC,14,49,33,8
+    LTEXT           "Date:",IDC_STATIC,7,7,18,8
+    GROUPBOX        "Source",IDC_STATIC,7,111,272,126
+    LTEXT           "?",IDC_PROJ_DATE,33,7,88,8
+    LTEXT           "?",IDC_PROJ_TYPE,39,31,106,8
+    LTEXT           "?",IDC_PROJ_TIME,50,49,108,8
+    GROUPBOX        "Current Chip",IDC_STATIC,7,68,272,42
+    LTEXT           "Type:",IDC_STATIC,14,79,19,8
+    LTEXT           "Days Left:",IDC_STATIC,14,95,33,8
+    LTEXT           "?",IDC_PROJ_CHIP_TYPE,49,80,106,8
+    LTEXT           "?",IDC_PROJ_CHIP_TIME,49,95,106,8
+END
+
+IDD_ENTRY DIALOG DISCARDABLE  0, 0, 186, 50
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter a name:"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,40,29,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,96,29,50,14
+    EDITTEXT        IDC_TEXT,7,7,172,14,ES_AUTOHSCROLL
+END
+
+IDD_ORDER_DLG DIALOG DISCARDABLE  0, 0, 213, 82
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Special Order"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,113,61,50,14
+    COMBOBOX        IDC_ORDER_TYPE,7,16,60,59,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_ORDER_CLASS,77,16,80,90,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ORDER_RATING,168,16,38,88,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Order",IDOK,50,61,50,14
+    LTEXT           "Type:",IDC_STATIC,7,7,19,8
+    LTEXT           "Class:",IDC_STATIC,77,7,20,8
+    LTEXT           "Rating:",IDC_STATIC,168,7,24,8
+    LTEXT           "Cost:",IDC_STATIC,7,34,17,8
+    LTEXT           "?",IDC_ORDER_COST,31,34,74,8
+    LTEXT           "Time:",IDC_STATIC,7,46,18,8
+    LTEXT           "?",IDC_ORDER_TIME,31,46,74,8
+END
+
+IDD_BUILD DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Build Program"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Enter a name for the new program:",IDC_STATIC,7,7,110,8
+    EDITTEXT        IDC_BUILD_TEXT,7,16,172,14,ES_AUTOHSCROLL
+    CONTROL         "Load into deck",IDC_BUILD_LOAD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,35,63,10
+    CONTROL         "Trash obsolete copies",IDC_BUILD_TRASH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,46,85,10
+    CONTROL         "Unload obsolete copies",IDC_BUILD_UNLOAD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,57,90,10
+    DEFPUSHBUTTON   "OK",IDOK,35,74,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,100,74,50,14
+END
+
+IDD_NAME DIALOG DISCARDABLE  0, 0, 186, 61
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Program Name"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,39,40,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,103,40,50,14
+    LTEXT           "Enter a new name for the new program:",IDC_STATIC,7,7,
+                    125,8
+    EDITTEXT        IDC_NAME_TEXT,7,16,172,14,ES_AUTOHSCROLL
+END
+
+IDD_SOUND_EDIT DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sound Effect Selection"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,36,74,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,98,74,50,14
+    LTEXT           "Choose Sound Effect:",IDC_STATIC,7,7,70,8
+    LISTBOX         IDC_SOUND_LIST,7,15,136,54,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Play",IDC_SOUND_PLAY,149,30,30,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Decker MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Decker\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Decker.EXE\0"
+            VALUE "ProductName", "Decker Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_INTRO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 112
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_NEW_CHAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 115
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_CHAR_DATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_DECK_DATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 372
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 272
+    END
+
+    IDD_CONTRACT_LIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 317
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_CONTRACT_DATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 251
+    END
+
+    IDD_SHOP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 241
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+
+    IDD_TRANSFER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 359
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_ICE_DATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_MISSION_RESULTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 294
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_REST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_NEW_PROJECT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_PROJECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_ENTRY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+
+    IDD_ORDER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_BUILD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_NAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_SOUND_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TITLE               BITMAP  DISCARDABLE     "res\\Title.bmp"
+IDB_NODE_IL_16          BITMAP  DISCARDABLE     "res\\Node_IL_16.bmp"
+IDB_NODE_IL_32          BITMAP  DISCARDABLE     "res\\Node_IL_32.bmp"
+IDB_NODE_CPU            BITMAP  DISCARDABLE     "res\\node_cpu.bmp"
+IDB_NODE_SPU            BITMAP  DISCARDABLE     "res\\node_spu.bmp"
+IDB_NODE_DS             BITMAP  DISCARDABLE     "res\\node_ds.bmp"
+IDB_NODE_LINE_EW        BITMAP  DISCARDABLE     "res\\line_ew.bmp"
+IDB_NODE_LINE_NS        BITMAP  DISCARDABLE     "res\\line_ns.bmp"
+IDB_NODE_IO             BITMAP  DISCARDABLE     "res\\node_io.bmp"
+IDB_NODE_PORTAL         BITMAP  DISCARDABLE     "res\\node_portal.bmp"
+IDB_NODE_JUNCTION       BITMAP  DISCARDABLE     "res\\node_jun.bmp"
+IDB_NODE_COP            BITMAP  DISCARDABLE     "res\\node_cop.bmp"
+IDB_IL_ICE              BITMAP  DISCARDABLE     "res\\il_ice.bmp"
+IDB_ITEM_IL             BITMAP  DISCARDABLE     "res\\item_il.bmp"
+IDB_SOFTWARE_IL         BITMAP  DISCARDABLE     "res\\software_il.bmp"
+IDB_IL_MISC             BITMAP  DISCARDABLE     "res\\il_misc.bmp"
+IDB_IL_TIME             BITMAP  DISCARDABLE     "res\\il_time.bmp"
+IDB_UP                  BITMAP  DISCARDABLE     "res\\up.bmp"
+IDB_DOWN                BITMAP  DISCARDABLE     "res\\down.bmp"
+IDB_IL_SPECIAL_NODES_16 BITMAP  DISCARDABLE     "res\\il_special_nodes_16.bmp"
+IDB_IL_SPECIAL_NODES_32 BITMAP  DISCARDABLE     "res\\il_special_nodes_32.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_NEW_PROJECT_DLG DLGINIT
+BEGIN
+    IDC_PROJ_TYPE, 0x403, 8, 0
+0x7250, 0x676f, 0x6172, 0x006d, 
+    IDC_PROJ_TYPE, 0x403, 5, 0
+0x6843, 0x7069, "\000" 
+    0
+END
+
+IDD_ORDER_DLG DLGINIT
+BEGIN
+    IDC_ORDER_TYPE, 0x403, 8, 0
+0x7250, 0x676f, 0x6172, 0x006d, 
+    IDC_ORDER_TYPE, 0x403, 5, 0
+0x6843, 0x7069, "\000" 
+    IDC_ORDER_TYPE, 0x403, 9, 0
+0x6148, 0x6472, 0x6177, 0x6572, "\000" 
+    IDC_ORDER_CLASS, 0x403, 8, 0
+0x7250, 0x676f, 0x6172, 0x006d, 
+    IDC_ORDER_CLASS, 0x403, 5, 0
+0x6843, 0x7069, "\000" 
+    IDC_ORDER_CLASS, 0x403, 9, 0
+0x6148, 0x6472, 0x6177, 0x6572, "\000" 
+    IDC_ORDER_RATING, 0x403, 8, 0
+0x7250, 0x676f, 0x6172, 0x006d, 
+    IDC_ORDER_RATING, 0x403, 5, 0
+0x6843, 0x7069, "\000" 
+    IDC_ORDER_RATING, 0x403, 9, 0
+0x6148, 0x6472, 0x6177, 0x6572, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MESSAGEVIEW_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "Clear"
+    BEGIN
+        MENUITEM "Clear",                       ID_MSGVIEWMENU_CLEAR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MATRIX_ACC ACCELERATORS DISCARDABLE 
+BEGIN
+    "A",            IDC_ATTACK,             VIRTKEY, NOINVERT
+    "C",            IDC_DECRYPT,            VIRTKEY, NOINVERT
+    "D",            IDC_DECEIVE,            VIRTKEY, NOINVERT
+    "E",            IDC_EVALUATE,           VIRTKEY, NOINVERT
+    "K",            IDC_SMOKE,              VIRTKEY, NOINVERT
+    "L",            IDC_SILENCE,            VIRTKEY, NOINVERT
+    "L",            IDC_QUICK_LOAD_KEY,     VIRTKEY, CONTROL, NOINVERT
+    "M",            IDC_MEDIC,              VIRTKEY, NOINVERT
+    "R",            IDC_RELOCATE,           VIRTKEY, NOINVERT
+    "S",            IDC_SCAN,               VIRTKEY, NOINVERT
+    "S",            IDC_QUICK_SAVE_KEY,     VIRTKEY, CONTROL, NOINVERT
+    "V",            IDC_VIEW_ICE,           VIRTKEY, NOINVERT
+    VK_DOWN,        IDC_MATRIX_S,           VIRTKEY, NOINVERT
+    VK_LEFT,        IDC_MATRIX_W,           VIRTKEY, NOINVERT
+    VK_RIGHT,       IDC_MATRIX_E,           VIRTKEY, NOINVERT
+    VK_TAB,         IDC_NEXT_TARGET,        VIRTKEY, NOINVERT
+    VK_UP,          IDC_MATRIX_N,           VIRTKEY, NOINVERT
+    "W",            IDC_WAIT1,              VIRTKEY, NOINVERT
+    "Z",            IDC_ANALYZE,            VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_GET_MAP             "Get an area map"
+    IDC_BACKDOOR            "Create a backdoor"
+    IDC_KILL_ALARM          "Cancel an alert"
+    IDC_ATTACK              "Attack using the default attack program."
+    IDC_DECEIVE             "Run the highest rated Deceive program"
+    IDC_ANALYZE             "Run the highest rated Analyze program."
+    IDC_KILL_TRACE          "Remove a completed trace"
+    IDC_WAIT1               "Wait one turn"
+    IDC_MATRIX_CHAR         "View character statistics"
+    IDC_MATRIX_DECK         "View deck statistics"
+    IDC_MATRIX_CONTRACT     "View the current contract"
+    IDC_VIEW_ICE            "View the targetted ICE"
+    IDC_HEALTHBAR_DECK      "Cyberdeck Health"
+    IDC_HEALTHBAR_MENTAL    "Mental Health"
+    IDC_HEALTHBAR_LETHAL    "Physical Health"
+    IDC_HEALTHBAR_SHIELD    "Shield Status"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_OPTIONS             "Game options"
+    IDC_MATRIX_N            "Move north"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_MATRIX_S            "Move south"
+    IDC_MATRIX_E            "Move east"
+    IDC_MATRIX_W            "Move west"
+    IDC_MATRIX_DISCONNECT   "Disconnect from the matrix"
+    IDC_MAP_ZOOM            "Zoom"
+    IDC_SOFTWARE_LIST       "Programs currently loaded"
+    IDC_RUN_PROGRAM         "Run the selected program"
+    IDC_SET_DEF_PROGRAM     "Set the default attack program"
+    IDC_LOAD_PROGRAM        "Load a program"
+    IDC_UNLOAD_PROGRAM      "Unload a program"
+    IDC_GET_FILE            "Get a file"
+    IDC_EDIT_FILE           "Edit a file"
+    IDC_ERASE_FILE          "Erase a file"
+    IDC_USE_IO              "Activate I/O"
+    IDC_ENTER_PORTAL        "Enter portal"
+    IDC_CRASH               "Crash the system"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_HEALTHBAR_TRANSFER  "Transfer Status"
+    IDC_HEALTHBAR_TRACE     "Trace Status"
+    IDC_HEALTHBAR_ICE       "Target ICE Health"
+    IDC_KILL_SHUTDOWN       "Cancel a system shutdown"
+    IDC_MAP_VIEW            "Area Map"
+    IDC_MESSAGE_VIEW        "Messages"
+    IDC_NODE_VIEW           "The current node"
+    IDC_ACTIVE_CHAR         "Programs affecting character"
+    IDC_ACTIVE_ICE          "Programs affecting target"
+    IDC_ACTIVE_NODE         "Programs affecting node"
+    IDC_TARGET_NAME         "Name of targetted ICE"
+    IDC_NODE_NAME           "Name of node you are in"
+    IDC_TARGET_PIC          "Targetted ICE"
+    IDC_ALARM_BAR           "System alert"
+    IDC_CLOCK               "Mission Clock"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_SCAN                "Scan Node"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Decker.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

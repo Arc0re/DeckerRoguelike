@@ -1,0 +1,7 @@
+decker.exe
+..\decker.ini
+..\help\decker.hlp
+..\help\decker.cnt
+..\Sound\*.*
+..\DefaultGraphics\*.*
+gpl.txt

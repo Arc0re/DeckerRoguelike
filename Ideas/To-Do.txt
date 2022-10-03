@@ -1,0 +1,78 @@
+Here are things I would like to add to the game:
+
+New ICE
+-------
+- Armor corrosive - each hit lowers rating of armor program.
+- LockDown - Instead of attacking, it prevents the player from leaving the node while it is active.
+- Virus - lowers a players health, attributes, or program ratings every few rounds until cured with a medic program, or maybe a new type of program (Cure/Innoculation).
+- Trojan Horse - appears as a valuable file in a datastore until try to download it, at which point it triggers an alarm or attacks.
+
+New Programs
+------------
+- Freeze - ICE can't do anything for a few turns (can't be attacked either, though)
+- New virus programs act like stealthy Slow or Weaken programs.
+- Block - Blocks off node so no ICE can enter it
+- Garbage - What a program becomes when it crashes. Rather than leaving the deck, it is marked as garbage, and the player has to spend a round to trash it (or reload it). This would allow for an interesting new ICE - one that attacks by filling your deck with useless crap, overlaoding it.
+- Charm - Makes an ICE fight for you (similar to confuse)
+- Time bomb - run the program, and in a few turns it attacks everyone in the node. Since you are not in the node, you can't be blamed. Maybe a chance of triggering an alert when first planting it. Plant several to clean out the node :-).
+- Warp/teleport - teleport to a random node. This could easily be abused, so it should have restrictions, such as it always takes you to a node in an area further away from the CPU, or there is a chance of it failing if you are under attack, and no teleports while the system is under red alert. 
+
+New Hardware
+------------
+- Reconstruction module - one shot module which rebuilds entire matrix system. This is rather dangerous, and really hard to justify from a realism perspective, so I don't know if it should be in there.
+
+New Missions
+------------
+- Elimination - Eliminate a certain percentage of ICE in system, all ICE in one node, or a single high-rating ICE. Must also disable ICE port as well. If objective is to eliminate a single ICE, it should be a stationary ICE guarding a node, so player doesn't have to chase it around the matrix.
+- Search friendly system for particular node or ICE, such as a spyware uploaded by another hacker. Maybe it is a system where all of the ICE are acting as if confused because of a virus program which is affecting entire system.
+- Distraction - The player must trigger a red alert, then stay in the matrix a certain number of turns (maybe requiring that ICE must follow / no smoke) to distract ICE from other hacker.
+
+New Interface Features
+----------------------
+- Cancel a contract
+- A list of files downloaded and their value (easy to do - just haven't done it yet)
+- Configurable hotkeys, and hotkeys for every action in the game.
+- New wait button that waits for a download to finish. Would have to stop for queries, attacks, alarms, etc.
+
+New Gameplay Features
+---------------------
+- Constructs - Friendly programs which help you fight, map the system, or search the system. Would use a Construct program as a basis, and use armor, attack, scan/analyze, etc. programs for attributes. (Shadowrun has these.)
+- Full matrix access - a player can enter any system in the matrix (or maybe any system previously visited) any time they want, without a contract. A matrix map would be nice.
+- Custom user missions - for pen&paper DM's who want to use Decker for Shadowrun/Cyberpunk assistance. Select a player's stats and equipment, and the run type and difficulty, and the user gets a single run where saves are not permitted.
+
+- New program structure - Programs have base type and options. For example, an area attack program would be an attack program with an 'Area Affect' option. A virus program would be an attack program with a 'stealth' option. This would give a great deal more flexibility to programs.
+	Base Effects:
+	- Attack
+	- Weaken
+	- Slow
+	- Confuse
+	Options:
+	- Area Affect (affects all in node, but -2 to rating against non-phased ICE)
+	- Piercing (+2 to hit, half damage to non-hardened ICE)
+	- Stealthy (use stealth roll to see if detected, -2 to rating)
+	- Compact (Smaller size, but higher difficulty in programming)
+
+- New ICE structure - Similar to above, ICE have basic ratings in different areas, rather than a type. Basic ratings would
+	- Attack - How well they attack (0 for white ICE)
+	- Scan - for queries. Black ICE would typically be lower than white ICE.
+	- Defend - How well they defend. Lower for white ICE.
+	- Trace (0 for most) - Gives them a trace rating.
+	Options would be:
+	- Hardened
+	- Phasing
+	- Killer (Attack only)
+	- Trace & dump, Trace & burn (Trace only)
+	- Immune to Hide
+	- Immune to Deceive	
+	- Stealthy - Aren't visible until they attack (or maybe become active).
+  Note that this would require a good bit of thought, because some ICE (such as guardian, gateway, and tapeworm) are very specialized in function, and may not mesh well with this.
+
+- Bank and/or stock exchange, to invest extra cash. Stocks in companies could change depending on which missions you take for what companies. 
+- Let virus (or other) programs be usable as default attack program.
+- Scripted missions - so that the game can have some type of plot. I started on this. See the Missions folder for what I have. Plot mission opportunities could be sent to the user via e-mail.
+- Complex missions, where more than one objective type is active. (This requries a major restructuring and redesign of mission code.)
+- Extra-valuable files (more heavily guarded), maybe only in banks.
+- Hacker must clear log files after red alert to get away clean
+
+
+

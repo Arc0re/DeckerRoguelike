@@ -1,0 +1,17 @@
+; This file is maintained by HCW. Do not modify this file directly.
+
+[OPTIONS]
+LCID=0x409 0x0 0x0 ; English (United States)
+REPORT=Yes
+TITLE=Decker Help
+CNT=Decker.cnt
+HLP=Decker.hlp
+
+[FILES]
+Decker.rtf
+
+[MAP]
+#include ..\Decker.hm
+
+[WINDOWS]
+main="",(116,112,816,798),27904,,(r16744448),f2

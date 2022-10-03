@@ -1,0 +1,10 @@
+#define HID_INTRO	1000
+#define HID_HOME	1001
+#define HID_CHAR	1002
+#define HID_CONTRACT	1003
+#define HID_SHOP	1004
+#define HID_PROGRAM	1005
+#define HID_REST	1006
+#define HID_DECK	1007
+#define HID_MATRIX	1008
+#define HID_ACTIONS	1009

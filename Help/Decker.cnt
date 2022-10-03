@@ -1,0 +1,35 @@
+:Base Decker
+1 Introduction
+2 Introduction=Decker_Intro
+2 How the Game is Played=Basic_Gameplay
+1 Playing the Game
+2 Starting the Game=HID_INTRO
+2 Home
+3 At Home=HID_HOME
+3 Character Screen=HID_CHAR
+3 Cyberdeck Configuration Screen=HID_DECK
+3 Contract Screen=HID_CONTRACT
+3 Shop Screen=HID_SHOP
+3 Program Screen=HID_PROGRAM
+3 Rest & Recuperate Screen=HID_REST
+2 The Matrix
+3 The Matrix Screen=HID_MATRIX
+3 Matrix Actions=HID_ACTIONS
+2 Hints & Tips
+3 Hints & Tips=Hints
+1 Appendices
+2 Character Attributes
+3 Reputation=Reputation
+3 Lifestyle=Lifestyle
+3 Skills=Skills
+3 Health=Health
+2 Deck Components
+3 Programs=Programs
+3 Chips=Chips
+3 Hardware=Hardware
+2 System Components
+3 ICE=Ice
+3 Nodes=Nodes
+1 Miscellaneous
+2 Customization=Customization
+2 Miscellaneous=Miscellaneous
